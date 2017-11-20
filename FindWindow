@@ -1,0 +1,7 @@
+[DllImport("user32.dll", SetLastError = true)]
+internal static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+// Getウィンドウディスクトップハンドル
+
+windows xp FindWindow("Progman", "Program Manager");
+windows 7以降 FindWindow("WorkerW", null);
